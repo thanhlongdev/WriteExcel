@@ -18,6 +18,8 @@ public class WriteExcel {
         int rowIndex = 0;
         //Write Header
         writeHeader(sheet, rowIndex++, "Số Thứ Tự", "Họ Tên");
+
+        //Write Row
         for (Object[] objects: list){
             //Create Row
             Row row = sheet.createRow(rowIndex);
